@@ -1,0 +1,337 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    padding: 0;
+}
+
+      .cabecera{
+    align-items: center;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media screen and (min-width: 0) {
+    .cabecera{
+        padding: 0 1rem;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cabecera{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+}
+.rodapie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.personas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+@media screen and (min-width: 0) {
+    .personas{       
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .personas{        
+        flex-direction: row;
+    }
+}
+.movies{
+    background: #293942;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+@media screen and (min-width: 0) {
+    .movies{       
+        padding: 5rem 0 0 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .movies{        
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .movies{        
+        padding: 5rem 0 0 5rem;
+    }
+}
+@media screen and (min-width: 0) {
+    .logo{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .logo{
+        display: block;
+    }
+}
+.banner__imagen{
+    background: url(https://almendragq.wordpress.com/wp-content/uploads/2021/01/cropped-52927.jpg) no-repeat center / cover;
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__imagen{
+        height: calc(100vh - 51px);
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner__imagen{
+        height: calc(100vh - 72px);
+    }
+}
+.banner__titulo{
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0px 4px  4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner__titulo{
+        font-size: 5.0625rem;
+    }
+}
+.banner{
+    position: relative;
+}
+.rodapie__descripcion{
+    display: flex;
+    font-size: 2rem;
+    margin-left: 5rem;
+    color: #8c8888;
+}
+.rodapie__icon{
+    margin-right: 1.25rem;
+}
+.rodapie__item{
+    list-style: none;
+}
+.rodapie__lista{
+    display: flex;
+    
+}
+.rodapie__titulo{
+    display: flex;
+    color: #8c8888;
+    font-weight: 400;
+    font-size: 1.25rem;
+    align-items: center;
+    padding: 1.5625rem;
+}
+.menu__item{
+    list-style: none;
+}
+.menu__link{
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+.menu__link.activo{
+    color: #333;
+}
+.menu__lista{
+    display: flex;    
+}
+.persona__funcion{
+    color: #726b60;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.persona__imagen{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.persona__imagen--alo{
+    background-image: url('https://almendragq.wordpress.com/wp-content/uploads/2024/07/yo.jpg?w=958');
+}
+
+
+.persona__nombre{
+    font-family: Pacifico, cursive;
+    color: #3C768F;
+    font-size: 2rem;
+    margin: 1rem 0;
+    
+}
+.persona{
+    display: flex;
+    flex-direction: column;    
+}
+
+@media screen and (min-width: 0) {
+    .persona{       
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .persona{        
+        margin-bottom: 0rem;
+    }
+}
+.quienes__descripcion{
+    color: #726b60;
+    font-size: 1.5rem;
+}
+.quienes__titulo{
+    font-family: Pacifico, cursive;
+    color: #3C768F;
+    font-weight: 400;
+    font-size: 3.1875rem;
+    margin-bottom: 1rem;
+}
+.quienes{
+    padding: 5rem;
+    text-align: center;
+}
+.movie__boton{
+    background: #3C768F;
+    border: none;
+    border-radius: 5px;
+    color: #E9D5C0;
+    padding: 1rem;
+    transition: all .1s ease-in-out;
+}
+
+.movie__boton:hover{
+    background: #E9D5C0;
+    color: #3C768F ;
+    cursor: pointer;
+}
+.movie__contenido{
+    padding: 1rem;
+}
+.movie__descripcion{
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: justify;
+    font-weight: 300;
+}
+.receta_imagen{
+    height: 200px;
+}
+.movie__titulo{
+    font-size: 1.4375rem;
+}
+.movie{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    
+}
+@media screen and (min-width: 0) {
+    .movie{       
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .movie{        
+        margin-right: 2.5rem;
+        width: calc(33.3% - 2.5rem);
+    }
+}
+@media screen and (min-width: 992px) {
+    .movie{        
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+}
+.sobre__descripcion{
+    color: #726b60;
+    font-weight: 400;
+    text-align: justify;
+
+}
+@media screen and (min-width: 0) {
+    .sobre__descripcion{      
+        font-size: 1.125rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__descripcion{  
+        font-size: 1.3rem;
+    }
+
+}
+
+.sobre__titulo{
+    color: #3C768F;
+    font-family: Pacifico, cursive;
+}
+@media screen and (min-width: 0) {
+    .sobre__titulo{       
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__titulo{        
+        font-size: 3.1875rem;
+    }
+}
+
+.sobre__titulo{
+    color: #3C768F;
+    font-family: Pacifico, cursive;
+    font-weight: 400;
+    font-size: 3.1875rem;
+}
+
+.sobre{
+    padding: 2.5rem;
+    text-align: center;
+}
+@media screen and (min-width: 0) {
+    .sobre{
+        padding: 2.5rem 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre{
+        padding: 2.5rem;
+    }
+}
