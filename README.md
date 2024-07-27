@@ -1,2 +1,2 @@
-# portafolio-b7-g2
+# pagina-mis-gustos
 Pagina de Mis Gustos
